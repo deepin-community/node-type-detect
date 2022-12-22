@@ -1,0 +1,5 @@
+jest --testRegex \
+	test/dom.js \
+	test/new-ecmascript-types.js \
+	test/node.js \
+	test/tostringtag-extras.js

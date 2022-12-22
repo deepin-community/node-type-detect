@@ -1,0 +1,16 @@
+Description: Switch to maintained @rollup/plugin-node-resolve and @rollup/plugin-commonjs
+Author: Abraham Raji <avronr@tuta.io>
+Forwarded: https://github.com/chaijs/type-detect/pull/144
+Last-Update: 2020-12-30
+
+--- a/rollup.conf.js
++++ b/rollup.conf.js
+@@ -1,6 +1,6 @@
+ import coverage from 'rollup-plugin-istanbul';
+-import common from 'rollup-plugin-commonjs';
+-import resolve from 'rollup-plugin-node-resolve';
++import common from '@rollup/plugin-commonjs';
++import resolve from '@rollup/plugin-node-resolve';
+ import transform from 'rollup-plugin-buble';
+ const env = process.env.NODE_ENV || 'test'; // eslint-disable-line no-process-env
+ const plugins = [ common(), resolve(), transform() ];

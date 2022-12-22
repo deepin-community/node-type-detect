@@ -1,0 +1,53 @@
+node-type-detect (4.0.8-3) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix GitHub tags regex
+  * Fix filenamemangle
+
+ -- Yadd <yadd@debian.org>  Tue, 16 Nov 2021 12:11:57 +0100
+
+node-type-detect (4.0.8-2) unstable; urgency=medium
+
+  * Team Upload
+  * Drop legacy node-resolve and commonjs plugins
+  * Add plugin versions for node-resolve and commonjs
+
+ -- Abraham Raji <avronr@tuta.io>  Wed, 30 Dec 2020 13:25:05 +0000
+
+node-type-detect (4.0.8-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Repository.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Apply multi-arch hints.
+    + node-type-detect: Add Multi-Arch: foreign.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-Browse.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs auto install
+  * New upstream version 4.0.8
+  * Update copyright
+  * Build with rollup
+  * Embed rollup-plugin-istanbul for build and simple-assert for test
+  * Enable upstream test using jest
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 13 Dec 2020 10:44:10 +0100
+
+node-type-detect (4.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #840408)
+
+ -- Syam G Krishnan <sgk@riseup.net>  Tue, 11 Oct 2016 17:17:38 +0530

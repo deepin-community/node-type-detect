@@ -1,0 +1,3 @@
+add-babelrc.patch
+fix-rollup-config.patch
+drop-legacy-plugins.patch

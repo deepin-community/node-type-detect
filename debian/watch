@@ -1,0 +1,5 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-type-detect-$1/ \
+ https://github.com/chaijs/type-detect/tags .*/archive/.*/v?([\d\.]+).tar.gz
