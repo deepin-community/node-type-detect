@@ -1,0 +1,24 @@
+Description: fix for rollup 3
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1022665
+Forwarded: not-needed
+Last-Update: 2022-10-27
+
+--- a/rollup.conf.js
++++ b/rollup.conf.js
+@@ -1,10 +1,10 @@
+-import coverage from 'rollup-plugin-istanbul';
+-import common from '@rollup/plugin-commonjs';
+-import resolve from '@rollup/plugin-node-resolve';
+-import transform from 'rollup-plugin-buble';
++const coverage = require('rollup-plugin-istanbul');
++const common = require('@rollup/plugin-commonjs');
++const resolve = require('@rollup/plugin-node-resolve').nodeResolve;
++const transform = require('rollup-plugin-buble');
+ const env = process.env.NODE_ENV || 'test'; // eslint-disable-line no-process-env
+ const plugins = [ common(), resolve(), transform() ];
+-export default {
++module.exports = {
+   input: env === 'test' ? 'test/index.js' : 'index.js',
+   output: {
+     file: env === 'test' ? 'type-detect.test.js' : 'type-detect.js',

@@ -1,3 +1,11 @@
+node-type-detect (4.0.8-4) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.1, no changes needed.
+  * Add fix for rollup 3 (Closes: #1022665)
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Oct 2022 16:48:36 +0200
+
 node-type-detect (4.0.8-3) unstable; urgency=medium
 
   * Team upload
