@@ -7,11 +7,12 @@ Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
  , jest <!nocheck>
  , node-assertion-error <!nocheck>
+ , node-istanbul
  , node-rollup-plugin-buble
  , node-rollup-plugin-commonjs (>= 15~)
  , node-rollup-plugin-node-resolve (>= 9~)
  , rollup
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-type-detect
 Vcs-Git: https://salsa.debian.org/js-team/node-type-detect.git
 Homepage: https://github.com/chaijs/type-detect
